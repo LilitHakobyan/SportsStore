@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace SportsStore.Models
 {
-    public class Class
+   public interface IProductRepository
     {
+        IQueryable<Product> Products { get; }
     }
 }
