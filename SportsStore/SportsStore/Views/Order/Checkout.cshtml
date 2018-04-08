@@ -1,6 +1,7 @@
 ﻿@model Order
 <h2>Check out now</h2>
 <p>Please enter your details, and we'll ship your goods right away!</p>
+<div asp-validation-summary="All" class="text-danger"></div>
 <form asp-action="Checkout" method="post">
     <h3>Ship to</h3>
     <div class="form-group">
